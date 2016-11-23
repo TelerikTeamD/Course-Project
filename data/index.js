@@ -5,11 +5,11 @@ const path = require("path");
 const fs = require("fs");
 
 module.exports = function(config) {
+    mongoose.Promise = global.Promise;
     mongoose.connect(config.connectionString);
 
     let data = {};
     let models = {};
-    mongoose.Promise = global.Promise;
 
     fs.readdirSync("./data")
         .filter(file => file.includes("-data"))
