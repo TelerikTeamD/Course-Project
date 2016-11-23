@@ -1,6 +1,7 @@
+/* globals module */
 "use strict";
 
-module.exports() {
+module.exports = {
     port: 3333,
-    connectionString: "mongodb"
+    connectionString: "mongodb://localhost/superheroesDb"
 };
