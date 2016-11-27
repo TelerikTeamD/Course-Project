@@ -8,9 +8,9 @@ module.exports = function(app, data) {
     let router = new express.Router();
 
     router
-        .get("/footballPlayers", controller.getAll)
-        .get("/footballPlayers:id", controller.getById)
-        .post("/footballPlayers", controller.create);
+        .get("/", controller.getAll)
+        .get("/:name", controller.getByName)
+        .post("/", controller.create);
 
     app.use("/footballPlayers", router);
 };

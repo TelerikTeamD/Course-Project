@@ -8,8 +8,8 @@ module.exports = function(data) {
                     });
                 });
         },
-        getById(req, res) {
-            data.getfootballPlayerById(req.params.id)
+        getByName(req, res) {
+            data.getfootballPlayerByName(req.params.name)
                 .then(footballPlayer => {
                     if (footballPlayer === null) {
                         return res.status(404)
