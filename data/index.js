@@ -1,3 +1,4 @@
+/* globals module require global __dirname */
 "use strict";
 
 const mongoose = require("mongoose");
@@ -8,8 +9,9 @@ module.exports = function(config) {
     mongoose.Promise = global.Promise;
     mongoose.connect(config.connectionString);
 
+    let FootballPlayer = require("../models/footballPlayer-model");
     let data = {};
-    let models = {};
+    let models = { FootballPlayer };
 
     fs.readdirSync("./data")
         .filter(file => file.includes("-data"))
@@ -20,5 +22,6 @@ module.exports = function(config) {
                     data[key] = dataModule[key];
                 });
         });
+
     return data;
 };

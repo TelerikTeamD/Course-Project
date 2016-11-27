@@ -1,3 +1,5 @@
+/* globals require module __dirname*/
+
 const path = require("path");
 const fs = require("fs");
 
