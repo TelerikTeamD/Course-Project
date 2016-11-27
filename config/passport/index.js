@@ -1,2 +1,2 @@
 "use strict";
-// Passport
+// Passport setup
