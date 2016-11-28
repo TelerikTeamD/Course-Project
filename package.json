@@ -1,31 +1,33 @@
 {
-  "name": "course-project",
-  "version": "1.0.0",
-  "description": "nodejs app",
-  "main": ".eslintrc.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TelerikTeamD/Course-Project.git"
-  },
-  "author": "Team D",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TelerikTeamD/Course-Project/issues"
-  },
-  "homepage": "https://github.com/TelerikTeamD/Course-Project#readme",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "cookie-parser": "^1.4.3",
-    "express": "^4.14.0",
-    "express-session": "^1.14.2",
-    "mongod": "^1.3.0",
-    "mongoose": "^4.6.8",
-    "passport": "^0.3.2",
-    "passport-local": "^1.0.0",
-    "pug": "^2.0.0-beta6",
-    "typings": "^2.0.0"
-  }
+    "name": "course-project",
+    "version": "1.0.0",
+    "description": "nodejs app",
+    "main": ".eslintrc.js",
+    "scripts": {
+        "dev": "./node_modules/.bin/nodemon app.js",
+        "postinstall": "./node_modules/.bin/bower install",
+        "test": "./node_modules/.bin/eslint ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TelerikTeamD/Course-Project.git"
+    },
+    "author": "Team D",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/TelerikTeamD/Course-Project/issues"
+    },
+    "homepage": "https://github.com/TelerikTeamD/Course-Project#readme",
+    "dependencies": {
+        "body-parser": "^1.15.2",
+        "cookie-parser": "^1.4.3",
+        "express": "^4.14.0",
+        "express-session": "^1.14.2",
+        "mongod": "^1.3.0",
+        "mongoose": "^4.6.8",
+        "passport": "^0.3.2",
+        "passport-local": "^1.0.0",
+        "pug": "^2.0.0-beta6",
+        "typings": "^2.0.0"
+    }
 }

@@ -1,10 +1,10 @@
 module.exports = function(data) {
     return {
         getAll(req, res) {
-            data.getAllfootballPlayers()
-                .then(footballPlayers => {
+            data.getAllFootballPlayers()
+                .then(players => {
                     res.render("footballPlayers-list", {
-                        result: footballPlayers
+                        result: players
                     });
                 });
         },

@@ -11,7 +11,10 @@ let schema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    team: {}
+    team: {
+        type: String,
+        required: true
+    }
 });
 mongoose.model("FootballPlayer", schema);
 

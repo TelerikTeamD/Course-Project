@@ -10,8 +10,8 @@ module.exports = function(config) {
     mongoose.connect(config.connectionString);
 
     let FootballPlayer = require("../models/footballPlayer-model");
-    let data = {};
     let models = { FootballPlayer };
+    let data = {};
 
     fs.readdirSync("./data")
         .filter(file => file.includes("-data"))

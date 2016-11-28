@@ -7,18 +7,18 @@ module.exports = function(models) {
     return {
         getAllFootballPlayers() {
             return new Promise((resolve, reject) => {
-                FootballPlayer.find((err, footballPlayers) => {
+                FootballPlayer.find((err, players) => {
                     if (err) {
                         return reject(err);
                     }
 
-                    return resolve(footballPlayers);
+                    return resolve(players);
                 });
             });
         },
-        getFootballPlayerById(id) {
+        getfootballPlayerByName(name) {
             return new Promise((resolve, reject) => {
-                FootballPlayer.findOne({ _id: id }, (err, footballPlayer) => {
+                FootballPlayer.findOne({ name: name }, (err, footballPlayer) => {
                     if (err) {
                         return reject(err);
                     }

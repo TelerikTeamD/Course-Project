@@ -3,7 +3,7 @@
 
 const protocol = "mongodb:/";
 const server = "localhost:27017";
-const databaseName = "FootballManagerDB";
+const databaseName = "Football";
 const connectionString = `${protocol}/${server}/${databaseName}`;
 
 module.exports = {
