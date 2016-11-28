@@ -6,7 +6,25 @@ head
         block app-title
     link(rel="stylesheet", href="/static/bower_components/bootstrap/dist/css/bootstrap.css")
 body
-    a.btn.btn-success(href="#") Click
     nav
 
+    <div id="head" class="jumbotron">
+        <h1>Football Manager</h1>
+            <p class="lead">Football Manager is a web application for football clubs, their players and managers around Europe.</p>
+    </div>
+    
+    <div id="content"></div>
+    <div id="grid"></div>
+    <div id="pager"></div>
+
     block content
+
+    <div id="entries" class="row">
+    <div class="col-md-4">
+        <h2>Players</h2>
+        <p>
+            Information about all Players.
+        </p>
+        <p><a id="bPlayers" class="btn btn-default" href="/footballPlayers">View Players &raquo;</a></p>
+    </div>
+    </div>

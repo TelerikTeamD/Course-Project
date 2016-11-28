@@ -1,0 +1,21 @@
+{
+  "name": "course-project",
+  "description": "nodejs app",
+  "main": "app.js",
+  "authors": [
+    "Team D"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/TelerikTeamD/Course-Project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
