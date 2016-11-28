@@ -8,6 +8,9 @@ let schema = new mongoose.Schema({
     age: {},
     address: {}
 });
+
 mongoose.model("Model", schema);
 
-module.exports = mongoose.model("Model");
+let model = mongoose.model("Model");
+
+module.exports = model;
