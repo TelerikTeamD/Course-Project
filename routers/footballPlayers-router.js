@@ -9,15 +9,7 @@ module.exports = function(app, data) {
     let router = new express.Router();
 
     router
-    // controller.getAll
-        .get("/", (req, res) => {
-            data.getAllFootballPlayers()
-                .then(players => {
-                    res.render("footballPlayers-list", {
-                        result: players
-                    });
-                });
-        })
+        .get("/", controller.getAll)
         .get("/:name", controller.getByName)
         .post("/", controller.create);
 

@@ -16,6 +16,6 @@ let schema = new mongoose.Schema({
         required: true
     }
 });
-mongoose.model("FootballPlayer", schema);
+mongoose.model("FootballPlayer", schema, "players");
 
 module.exports = mongoose.model("FootballPlayer");
