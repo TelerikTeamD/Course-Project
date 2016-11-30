@@ -1,4 +1,10 @@
+extends _layout
+
 block content
-h1 Players
-    each player in result
-        h2= player.name
+    h1 Players 
+        br
+        a.btn.btn-default(href="/footballPlayers/create") Add Player 
+        br
+        each player in result
+            a(href="/footballPlayers/" + player.name)= player.name
+            br

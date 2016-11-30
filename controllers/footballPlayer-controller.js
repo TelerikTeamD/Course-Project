@@ -16,14 +16,14 @@ module.exports = function(data) {
                             .redirect("/error");
                     }
 
-                    return res.render("footballPlayers-details", {
+                    return res.render("footballPlayer-details", {
                         result: footballPlayer
                     });
                 });
         },
         create(req, res) {
             let body = req.body;
-            data.createfootballPlayer(body.name, body.age, body.team)
+            data.createFootballPlayer(body.name, body.age, body.team)
                 .then(() => {
                     res.redirect("/footballPlayers");
                 });

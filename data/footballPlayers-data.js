@@ -11,7 +11,7 @@ module.exports = function(models) {
                     if (err) {
                         return reject(err);
                     }
-                    console.log(players);
+
                     return resolve(players);
                 });
             });

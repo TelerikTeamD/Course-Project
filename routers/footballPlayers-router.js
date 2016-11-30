@@ -10,6 +10,9 @@ module.exports = function(app, data) {
 
     router
         .get("/", controller.getAll)
+        .get("/create", function(req, res) {
+            res.render("footballPlayer-create");
+        })
         .get("/:name", controller.getByName)
         .post("/", controller.create);
 

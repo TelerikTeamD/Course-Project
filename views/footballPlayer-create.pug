@@ -1,0 +1,15 @@
+extends _layout
+
+block content
+        form(method="post" action="/footballPlayers")
+            label
+                | Name:
+                input(type="text" name="name")
+                br
+                | Age:
+                input(type="number" name="age")
+                br
+                | Team:
+                input(type="text" name="team")
+                br
+            input(type="submit" value="Add Player")
