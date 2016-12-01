@@ -8,9 +8,6 @@ head
 body
     include header
 
-    //.container
-    //   include flash
-
     <div id="head" class="jumbotron">
         <h1>Football Manager</h1>
             <p class="lead">Football Manager is a web application for football clubs, their players and managers around Europe.</p>
@@ -35,8 +32,9 @@ body
     <div id="content"></div>
     <div id="grid"></div>
     <div id="pager"></div>
-
     block content
+    .container
+        include flash
     include footer
 
     

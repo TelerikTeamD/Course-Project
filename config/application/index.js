@@ -1,4 +1,3 @@
-/* globals module require */
 "use strict";
 
 const express = require('express');
@@ -23,11 +22,6 @@ const multer = require('multer');
 const upload = multer({ dest: path.join(__dirname, 'uploads') });
 
 dotenv.load({ path: 'test.env.example' });
-
-const userController = require('../../controllers/user-controller');
-const apiController = require('../../controllers/api-controller');
-
-
 
 let app = express();
 
@@ -83,12 +77,6 @@ app.use((req, res, next) => {
     }
     next();
 });
-app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }));
-
-app.set("view engine", "pug");
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use("/static", express.static("public"));
 
