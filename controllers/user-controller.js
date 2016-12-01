@@ -50,7 +50,7 @@ exports.logout = (req, res) => {
     res.redirect('/');
 };
 
-// GET /sign up
+// GET /signup
 exports.getSignup = (req, res) => {
     if (req.user) {
         return res.redirect('/');
@@ -60,7 +60,7 @@ exports.getSignup = (req, res) => {
     });
 };
 
-// POST /sign up
+// POST /signup
 
 exports.postSignup = (req, res, next) => {
     req.assert('email', 'Email is not valid').isEmail();

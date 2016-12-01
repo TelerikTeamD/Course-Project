@@ -274,6 +274,7 @@ passport.use(new GitHubStrategy({
         });
     }
 }));
+
 /**
  * Login Required middleware.
  */

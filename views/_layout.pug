@@ -6,6 +6,11 @@ head
         block app-title
     link(rel="stylesheet", href="/static/bower_components/bootstrap/dist/css/bootstrap.css")
 body
+    include header
+
+    //.container
+    //   include flash
+
     <div id="head" class="jumbotron">
         <h1>Football Manager</h1>
             <p class="lead">Football Manager is a web application for football clubs, their players and managers around Europe.</p>
@@ -32,5 +37,6 @@ body
     <div id="pager"></div>
 
     block content
+    include footer
 
     
