@@ -26,6 +26,10 @@ let schema = new mongoose.Schema({
     stadiumName: {
         type: String,
         required: true
+    },
+    urlImage: {
+        type: String,
+        required: true
     }
 });
 mongoose.model("Team", schema, "teams");
