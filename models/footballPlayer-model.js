@@ -11,7 +11,15 @@ let schema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    position: {
+        type: String,
+        required: true
+    },
     team: {
+        type: String,
+        required: true
+    },
+    nation: {
         type: String,
         required: true
     }
