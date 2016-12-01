@@ -76,6 +76,8 @@ app.use((req, res, next) => {
     next();
 });
 
+
+
 app.use("/static", express.static("public"));
 
 module.exports = app;
