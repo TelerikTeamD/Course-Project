@@ -22,6 +22,14 @@ let schema = new mongoose.Schema({
     nation: {
         type: String,
         required: true
+    },
+    rating: {
+        type: Number,
+        required: true
+    },
+    urlImage: {
+        type: String,
+        required: true
     }
 });
 mongoose.model("FootballPlayer", schema, "players");
