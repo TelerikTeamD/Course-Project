@@ -25,8 +25,6 @@ dotenv.load({ path: 'test.env.example' });
 
 let app = express();
 
-app.set('port', process.env.PORT || 3333);
-
 app.set('view engine', 'pug');
 app.use(expressStatusMonitor());
 app.use(compression());
