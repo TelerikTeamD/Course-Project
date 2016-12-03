@@ -11,10 +11,12 @@ const passportConfig = require('./config/passport/index');
 
 const userController = require('./controllers/user-controller');
 const apiController = require('./controllers/api-controller');
+const homeController = require('./controllers/home');
 
 
 require("./routers")(app, data);
 
+app.get('/', homeController.index);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);
