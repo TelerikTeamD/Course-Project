@@ -6,6 +6,7 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 const chalk = require('chalk');
+const errorHandler = require('errorhandler');
 const lusca = require('lusca');
 const dotenv = require('dotenv');
 const MongoStore = require('connect-mongo')(session);
@@ -15,13 +16,12 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const expressValidator = require('express-validator');
 const expressStatusMonitor = require('express-status-monitor');
-//TODO connect sass with our directory used to find .scss(if we make any :> )
 const sass = require('node-sass-middleware');
 const multer = require('multer');
 
 const upload = multer({ dest: path.join(__dirname, 'uploads') });
 
-dotenv.load({ path: 'test.env.example' });
+dotenv.load({ path: '.env.test' });
 
 let app = express();
 
@@ -48,15 +48,15 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
-// app.use((req, res, next) => {
-//     if (req.path === '/api/upload') {
-//         next();
-//     } else {
-//         lusca.csrf()(req, res, next);
-//     }
-// });
-// app.use(lusca.xframe('SAMEORIGIN'));
-// app.use(lusca.xssProtection(true));
+app.use((req, res, next) => {
+    if (req.path === '/api/upload') {
+        next();
+    } else {
+        lusca.csrf()(req, res, next);
+    }
+});
+app.use(lusca.xframe('SAMEORIGIN'));
+app.use(lusca.xssProtection(true));
 app.use((req, res, next) => {
     res.locals.user = req.user;
     next();

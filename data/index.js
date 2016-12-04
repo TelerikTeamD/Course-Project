@@ -8,6 +8,10 @@ const fs = require("fs");
 module.exports = function(config) {
     mongoose.Promise = global.Promise;
     mongoose.connect(config.connectionString);
+    mongoose.connection.on('error', () => {
+        console.log('MongoDB connection error. Please make sure MongoDB is running.');
+        process.exit();
+    });
 
     let FootballPlayer = require("../models/footballPlayer-model");
     let models = { FootballPlayer };

@@ -8,7 +8,7 @@ const data = require("./data")(config);
 const passport = require('passport');
 const errorHandler = require('errorhandler');
 const passportConfig = require('./config/passport/index');
-
+const cool = require('cool-ascii-faces');
 const userController = require('./controllers/user-controller');
 const apiController = require('./controllers/api-controller');
 const homeController = require('./controllers/home');
@@ -17,6 +17,9 @@ const homeController = require('./controllers/home');
 require("./routers")(app, data);
 
 app.get('/', homeController.index);
+app.get('/cool', function(request, response) {
+    response.send(cool());
+});
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);

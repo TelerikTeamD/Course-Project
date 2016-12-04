@@ -1,10 +1,8 @@
 /* globals module */
 "use strict";
-
-const protocol = "mongodb:/";
-const server = "localhost:27017";
-const databaseName = "Football";
-const connectionString = `${protocol}/${server}/${databaseName}`;
+const dotenv = require('dotenv');
+dotenv.load({ path: '.env.test' });
+const connectionString = process.env.MONGODB_URI || process.env.MONGOLAB_URI ;
 
 module.exports = {
     port: 3333,
