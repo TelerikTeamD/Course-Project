@@ -1,0 +1,92 @@
+﻿Teams
+
+01
+name: "Bournemouth",
+yearFounded: 1899,
+manager: "Eddie Howe",
+city: "Bournemouth",
+nickName: "The Cherries",
+stadiumName: "Goldsands Stadium",
+urlImage: "https://smimgs.com/images/logos/clubs/9.jpg"
+
+02
+name: "Arsenal",
+yearFounded: 1886,
+manager: "Arsene Wenger",
+city: "London",
+nickName: "The Gunners",
+stadiumName: "Emirates Stadium",
+urlImage: "https://smimgs.com/images/logos/clubs/1_1292443494.jpg"
+
+
+03
+name: "Chelsea",
+yearFounded: 1905,
+manager: "Antonio Conte",
+city: "London",
+nickName: "The Blues",
+stadiumName: "Stamford Bridge",
+urlImage: "https://smimgs.com/images/logos/clubs/31.jpg"
+
+04
+name: "Everton",
+yearFounded: 1878,
+manager: "Ronald Koeman",
+city: "Liverpool",
+nickName: "The Toffees",
+stadiumName: "Goodison Park",
+urlImage: "https://smimgs.com/images/logos/clubs/31.jpg"
+
+05
+name: "Leicester",
+yearFounded: 1884,
+manager: "Claudio Ranieri",
+city: "Leicester",
+nickName: "The Foxes",
+stadiumName: "King Power Stadium",
+urlImage: "https://smimgs.com/images/logos/clubs/41_1243862356.jpg"
+
+06
+name: "Liverpool",
+yearFounded: 1892,
+manager: "Jürgen Klopp",
+city: "Liverpool",
+nickName: "The Reds",
+stadiumName: "Anfield",
+urlImage: "https://smimgs.com/images/logos/clubs/44.jpg"
+
+07
+name: "Manchester City",
+yearFounded: 1887,
+manager: "Josep Guardiola",
+city: "Manchester",
+nickName: "The Citizens",
+stadiumName: "Etihad Stadium",
+urlImage: "https://smimgs.com/images/logos/clubs_small/47.jpg"
+
+08
+name: "Manchester United",
+yearFounded: 1878,
+manager: "Jose Mourinho",
+city: "Manchester",
+nickName: "The Red Devils",
+stadiumName: "Old Trafford",
+urlImage: "https://smimgs.com/images/logos/clubs/49.jpg"
+
+09
+name: "Tottenham Hotspur",
+yearFounded: 1882,
+manager: "Mauricio Pochettino",
+city: "London",
+nickName: "Spurs",
+stadiumName: "White Hart Lane",
+urlImage: "https://smimgs.com/images/logos/clubs/80_1217330011.jpg"
+
+10
+name: "Southampton",
+yearFounded: 1885,
+manager: "Claude Puel",
+city: "Southampton",
+nickName: "The Saints",
+stadiumName: "St Mary's Stadium",
+urlImage: "https://smimgs.com/images/logos/clubs/72.jpg"

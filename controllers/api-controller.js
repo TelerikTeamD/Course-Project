@@ -41,7 +41,7 @@ exports.getFacebook = (req, res, next) => {
  */
 exports.getGithub = (req, res, next) => {
     const github = new GitHub();
-    github.repos.get({ user: 'pepchon', repo: 'TelerikTeamD' }, (err, repo) => {
+    github.get({ user: 'pepchon', repo: 'TelerikTeamD' }, (err, repo) => {
         if (err) { return next(err); }
         res.render('api/github', {
             title: 'GitHub API',
@@ -58,7 +58,7 @@ exports.getGithub = (req, res, next) => {
 exports.getLinkedin = (req, res, next) => {
     const token = req.user.tokens.find(token => token.kind === 'linkedin');
     const linkedin = Linkedin.init(token.accessToken);
-    linkedin.people.me((err, $in) => {
+    linkedin.me((err, $in) => {
         if (err) { return next(err); }
         res.render('api/linkedin', {
             title: 'LinkedIn API',

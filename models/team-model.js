@@ -7,24 +7,24 @@ let schema = new mongoose.Schema({
         type: String,
         required: true
     },
-    age: {
+    yearFounded: {
         type: Number,
         required: true
     },
-    position: {
+    manager: {
         type: String,
         required: true
     },
-    team: {
+    city: {
         type: String,
         required: true
     },
-    nation: {
+    nickName: {
         type: String,
         required: true
     },
-    rating: {
-        type: Number,
+    stadiumName: {
+        type: String,
         required: true
     },
     urlImage: {
@@ -32,6 +32,6 @@ let schema = new mongoose.Schema({
         required: true
     }
 });
-mongoose.model("FootballPlayer", schema, "players");
+mongoose.model("Team", schema, "teams");
 
-module.exports = mongoose.model("FootballPlayer");
+module.exports = mongoose.model("Team");

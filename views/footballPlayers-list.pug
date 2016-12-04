@@ -1,10 +1,10 @@
 extends _layout
 
 block content
-    h1 Players 
-        br
-        a.btn.btn-default(href="/footballPlayers/create") Add Player 
+    h3 Players
         br
         each player in result
+            img(src=player.urlImage)
             a(href="/footballPlayers/" + player.name)= player.name
-            br
+            div(id="grid")
+            div(id="pager")
