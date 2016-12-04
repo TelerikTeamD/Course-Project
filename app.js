@@ -12,6 +12,7 @@ const cool = require('cool-ascii-faces');
 const userController = require('./controllers/user-controller');
 const apiController = require('./controllers/api-controller');
 const homeController = require('./controllers/home');
+const prizesController = require('./controllers/prizes-controller');
 
 
 require("./routers")(app, data);
@@ -53,6 +54,8 @@ app.get('/auth/linkedin', passport.authenticate('linkedin', { state: 'SOME STATE
 app.get('/auth/linkedin/callback', passport.authenticate('linkedin', { failureRedirect: '/login' }), (req, res) => {
     res.redirect(req.session.returnTo || '/');
 });
+
+app.get('/prizes', prizesController.getPrizes);
 
 app.use(errorHandler());
 
