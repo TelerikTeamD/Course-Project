@@ -1,10 +1,11 @@
 /* globals module */
 "use strict";
-const dotenv = require('dotenv');
-dotenv.load({ path: '.env.test' });
+
 const connectionString = process.env.MONGODB_URI || process.env.MONGOLAB_URI ;
+// let port be set by heroku
+const port = process.env.PORT || 8080;
 
 module.exports = {
-    port: 3333,
+    port: port,
     connectionString: connectionString
 };
