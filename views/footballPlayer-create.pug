@@ -1,15 +1,22 @@
 extends _layout
 
 block content
-        form(method="post" action="/footballPlayers")
-            label
-                | Name:
-                input(type="text" name="name")
-                br
-                | Age:
-                input(type="number" name="age")
-                br
-                | Team:
-                input(type="text" name="team")
-                br
-            input(type="submit" value="Add Player")
+    form.form-horizontal(id='createPlayer', method='POST' action="/footballPlayers/create")
+        input(type='hidden', name='_csrf', value=_csrf)
+        .form-group
+            label.col-sm-3.control-label(for='player') Name:
+            .col-sm-5
+                input.form-control(type='text', name='name', id='player', placeholder='Name', autofocus, required)
+        .form-group
+            label.col-sm-3.control-label(for='playerAge') Age:
+            .col-sm-5
+                input.form-control(type='number', name='age', id='playerAge', placeholder='Age', required)
+        .form-group
+            label.col-sm-3.control-label(for='playerTeam') Team:
+            .col-sm-5
+                input.form-control(type='text', name='team', id='playerTeam', placeholder='Team', required)
+        .form-group
+            .col-sm-offset-3.col-sm-7
+                button.btn.btn-primary(type='submit')
+                    i.fa.fa-lock
+                    | Create
