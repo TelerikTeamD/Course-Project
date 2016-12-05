@@ -4,5 +4,7 @@ block content
     h3 Players
         br
         each player in result
+            img(src=player.urlImage)
             a(href="/footballPlayers/" + player.name)= player.name
-
+            div(id="grid")
+            div(id="pager")
