@@ -33,5 +33,5 @@ let schema = new mongoose.Schema({
     }
 });
 mongoose.model("Team", schema, "teams");
-
-module.exports = mongoose.model("Team");
+const team = mongoose.model("Team");
+module.exports = team;

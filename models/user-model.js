@@ -62,6 +62,6 @@ userSchema.methods.gravatar = function gravatar(size) {
     return `https://gravatar.com/avatar/${md5}?s=${size}&d=monsterid`;
 };
 
-const User = mongoose.model('user-model', userSchema, 'Users');
-
+mongoose.model('user-model', userSchema, 'Users');
+const User = mongoose.model('User');
 module.exports = User;

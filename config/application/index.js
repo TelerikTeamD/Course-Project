@@ -5,8 +5,6 @@ const compression = require('compression');
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
-const chalk = require('chalk');
-const errorHandler = require('errorhandler');
 const lusca = require('lusca');
 const dotenv = require('dotenv');
 const MongoStore = require('connect-mongo')(session);
@@ -19,7 +17,6 @@ const expressStatusMonitor = require('express-status-monitor');
 const sass = require('node-sass-middleware');
 const multer = require('multer');
 
-const upload = multer({ dest: path.join(__dirname, 'uploads') });
 
 dotenv.load({ path: '.env.test' });
 
@@ -62,7 +59,6 @@ app.use((req, res, next) => {
     next();
 });
 app.use((req, res, next) => {
-    // After successful login, redirect back to the intended page
     if (!req.user &&
         req.path !== '/login' &&
         req.path !== '/signup' &&
