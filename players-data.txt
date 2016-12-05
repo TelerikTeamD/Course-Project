@@ -1,91 +1,459 @@
-https://www.soccerwiki.org/squad.php?clubid=1
-
-01
-name: "BORUC, Artur",
-age: 36,
-position: "GK",
-team: "AFC Bournemouth",
-nation: "Poland",
-rating: 87,
-urlImage: "https://cdn.soccerwiki.org/images/player/4859.jpg"
-
-02
-name: "SMITH, Adam",
-age: 25,
-position: "DEF",
-team: "AFC Bournemouth",
-nation: "England",
-rating: 84,
-urlImage: "https://cdn.soccerwiki.org/images/player/42752.jpg"
-
-03
-name: "HYNDMAN, Emerson",
-age: 20,
-position: "MID",
-team: "AFC Bournemouth",
-nation: "USA",
-rating: 78,
-urlImage: "https://cdn.soccerwiki.org/images/player/75231.jpg"
-
-04
-name: "STANISLAS, Junior",
-age: 27,
-position: "MID",
-team: "AFC Bournemouth",
-nation: "England",
-rating: 84,
-urlImage: "https://cdn.soccerwiki.org/images/player/37304_1239668229.jpg"
-
-05
-name: "KING, Joshua",
-age: 24,
-position: "FW",
-team: "AFC Bournemouth",
-nation: "Norway",
-rating: 85,
-urlImage: "https://cdn.soccerwiki.org/images/player/41758.jpg"
-
-06
-name: "OSPINA, David",
-age: 28,
-position: "GK",
-team: "Arsenal",
-nation: "Colombia",
-rating: 89,
-urlImage: "https://cdn.soccerwiki.org/images/player/20878.jpg"
-
-07
-name: "GIBBS, Kieran",
-age: 27,
-position: "DEF",
-team: "Arsenal",
-nation: "England",
-rating: 89,
-urlImage: "https://cdn.soccerwiki.org/images/player/30975.jpg"
-
-08
-name: "BELLERIN, Hector",
-age: 21,
-position: "DEF",
-team: "Arsenal",
-nation: "Spain",
-rating: 89,
-urlImage: "https://cdn.soccerwiki.org/images/player/68700.jpg"
-
-09
-name: "SANCHEZ, Alexis",
-age: 27,
-position: "FW",
-team: "Arsenal",
-nation: "Chile",
-rating: 94,
-urlImage: "https://cdn.soccerwiki.org/images/player/12927.jpg"
-
-10
-name: "GIROUD, Olivier",
-age: 30,
-position: "FW",
-team: "Arsenal",
-nation: "France",
-rating: 91,
-urlImage: "https://cdn.soccerwiki.org/images/player/15177.jpg"
+{
+"name": "BORUC, Artur",
+"age": 36,
+"position": "GK",
+"team": "AFC Bournemouth",
+"nation": "Poland",
+"rating": 87,
+"urlImage": "https://cdn.soccerwiki.org/images/player/4859.jpg"
+},
+{
+"name": "SMITH, Adam",
+"age": 25,
+"position": "DEF",
+"team": "AFC Bournemouth",
+"nation": "England",
+"rating": 84,
+"urlImage": "https://cdn.soccerwiki.org/images/player/42752.jpg"
+},
+{
+"name": "HYNDMAN, Emerson",
+"age": 20,
+"position": "MID",
+"team": "AFC Bournemouth",
+"nation": "USA",
+"rating": 78,
+"urlImage": "https://cdn.soccerwiki.org/images/player/75231.jpg"
+},
+{
+"name": "STANISLAS, Junior",
+"age": 27,
+"position": "MID",
+"team": "AFC Bournemouth",
+"nation": "England",
+"rating": 84,
+"urlImage": "https://cdn.soccerwiki.org/images/player/37304_1239668229.jpg"
+},
+{
+"name": "KING, Joshua",
+"age": 24,
+"position": "FW",
+"team": "AFC Bournemouth",
+"nation": "Norway",
+"rating": 85,
+"urlImage": "https://cdn.soccerwiki.org/images/player/41758.jpg"
+},
+{
+"name": "OSPINA, David",
+"age": 28,
+"position": "GK",
+"team": "Arsenal",
+"nation": "Colombia",
+"rating": 89,
+"urlImage": "https://cdn.soccerwiki.org/images/player/20878.jpg"
+},
+{
+"name": "GIBBS, Kieran",
+"age": 27,
+"position": "DEF",
+"team": "Arsenal",
+"nation": "England",
+"rating": 89,
+"urlImage": "https://cdn.soccerwiki.org/images/player/30975.jpg"
+},
+{
+"name": "BELLERIN, Hector",
+"age": 21,
+"position": "DEF",
+"team": "Arsenal",
+"nation": "Spain",
+"rating": 89,
+"urlImage": "https://cdn.soccerwiki.org/images/player/68700.jpg"
+},
+{
+"name": "SANCHEZ, Alexis",
+"age": 27,
+"position": "FW",
+"team": "Arsenal",
+"nation": "Chile",
+"rating": 94,
+"urlImage": "https://cdn.soccerwiki.org/images/player/12927.jpg"
+},
+{
+"name": "GIROUD, Olivier",
+"age": 30,
+"position": "FW",
+"team": "Arsenal",
+"nation": "France",
+"rating": 91,
+"urlImage": "https://cdn.soccerwiki.org/images/player/15177.jpg"
+},
+{
+"name": "COURTOIS, Thibaut",
+"age": 24,
+"position": "GK",
+"team": "Chelsea",
+"nation": "Belgium",
+"rating": 93,
+"urlImage": "https://cdn.soccerwiki.org/images/player/38848.jpg"
+},
+{
+"name": "LUIZ, David",
+"age": 29,
+"position": "DEF",
+"team": "Chelsea",
+"nation": "Brazil",
+"rating": 92,
+"urlImage": "https://cdn.soccerwiki.org/images/player/22645.jpg"
+},
+{
+"name": "FABREGAS, Cesc",
+"age": 29,
+"position": "MID",
+"team": "Chelsea",
+"nation": "Spain",
+"rating": 94,
+"urlImage": "https://cdn.soccerwiki.org/images/player/19.jpg"
+},
+{
+"name": "COSTA, Diego",
+"age": 28,
+"position": "FW",
+"team": "Chelsea",
+"nation": "Spain",
+"rating": 94,
+"urlImage": "https://cdn.soccerwiki.org/images/player/21674.jpg"
+},
+{
+"name": "HAZARD, Eden",
+"age": 25,
+"position": "MID",
+"team": "Chelsea",
+"nation": "Belgium",
+"rating": 95,
+"urlImage": "https://cdn.soccerwiki.org/images/player/32924.jpg"
+},
+{
+"name": "STEKELENBURG, Maarten",
+"age": 34,
+"position": "GK",
+"team": "Everton",
+"nation": "Netherland",
+"rating": 87,
+"urlImage": "https://cdn.soccerwiki.org/images/player/3071.jpg"
+},
+{
+"name": "BAINES, Leighton",
+"age": 31,
+"position": "DEF",
+"team": "Everton",
+"nation": "England",
+"rating": 90,
+"urlImage": "https://cdn.soccerwiki.org/images/player/2000.jpg"
+},
+{
+"name": "JAGIELKA, Phil",
+"age": 34,
+"position": "DEF",
+"team": "Everton",
+"nation": "England",
+"rating": 90,
+"urlImage": "https://cdn.soccerwiki.org/images/player/1610.jpg"
+},
+{
+"name": "LUKAKU, Romelu",
+"age": 23,
+"position": "FW",
+"team": "Everton",
+"nation": "Belgium",
+"rating": 91,
+"urlImage": "https://cdn.soccerwiki.org/images/player/39507.jpg"
+},
+{
+"name": "BARKLEY, Ross",
+"age": 22,
+"position": "MID",
+"team": "Everton",
+"nation": "England",
+"rating": 89,
+"urlImage": "https://cdn.soccerwiki.org/images/player/51584.jpg"
+},
+{
+"name": "SCHMEICHEL, Kasper",
+"age": 30,
+"position": "GK",
+"team": "Leicester",
+"nation": "Denmark",
+"rating": 89,
+"urlImage": "https://cdn.soccerwiki.org/images/player/8960.jpg"
+},
+{
+"name": "FUCHS, Christian",
+"age": 30,
+"position": "DEF",
+"team": "Leicester",
+"nation": "Austia",
+"rating": 89,
+"urlImage": "https://cdn.soccerwiki.org/images/player/13023.jpg"
+},
+{
+"name": "MAHREZ, Riyad",
+"age": 25,
+"position": "MID",
+"team": "Leicester",
+"nation": "Algeria",
+"rating": 84,
+"urlImage": "https://cdn.soccerwiki.org/images/player/58616.jpg"
+},
+{
+"name": "VARDY, Jamie",
+"age": 29,
+"position": "FW",
+"team": "Leicester",
+"nation": "England",
+"rating": 90,
+"urlImage": "https://cdn.soccerwiki.org/images/player/53822.jpg"
+},
+{
+"name": "SIMPSON, Danny",
+"age": 29,
+"position": "DEF",
+"team": "Leicester",
+"nation": "England",
+"rating": 87,
+"urlImage": "https://cdn.soccerwiki.org/images/player/14306.jpg"
+},
+{
+"name": "MIGNOLET, Simon",
+"age": 28,
+"position": "GK",
+"team": "Liverpool",
+"nation": "Belgium",
+"rating": 90,
+"urlImage": "https://cdn.soccerwiki.org/images/player/29048.jpg"
+},
+{
+"name": "MILNER, James",
+"age": 30,
+"position": "MID",
+"team": "Liverpool",
+"nation": "England",
+"rating": 90,
+"urlImage": "https://cdn.soccerwiki.org/images/player/1214.jpg"
+},
+{
+"name": "COUTINHO, Philippe",
+"age": 24,
+"position": "MID",
+"team": "Liverpool",
+"nation": "Brazil",
+"rating": 91,
+"urlImage": "https://cdn.soccerwiki.org/images/player/39823.jpg"
+},
+{
+"name": "FIRMINO, Roberto",
+"age": 25,
+"position": "FW",
+"team": "Liverpool",
+"nation": "Brazil",
+"rating": 90,
+"urlImage": "https://cdn.soccerwiki.org/images/player/44009.jpg"
+},
+{
+"name": "STURRIDGE, Daniel",
+"age": 27,
+"position": "FW",
+"team": "Liverpool",
+"nation": "England",
+"rating": 91,
+"urlImage": "https://cdn.soccerwiki.org/images/player/20312.jpg"
+},
+{
+"name": "BRAVO, Claudio",
+"age": 33,
+"position": "GK",
+"team": "Manchester City",
+"nation": "Chile",
+"rating": 91,
+"urlImage": "https://cdn.soccerwiki.org/images/player/5298.jpg"
+},
+{
+"name": "KOLAROV, Aleksandar",
+"age": 31,
+"position": "DEF",
+"team": "Manchester City",
+"nation": "Serbia",
+"rating": 90,
+"urlImage": "https://cdn.soccerwiki.org/images/player/19480.jpg"
+},
+{
+"name": "AGUERO, Sergio",
+"age": 28,
+"position": "FW",
+"team": "Manchester City",
+"nation": "Argentina",
+"rating": 95,
+"urlImage": "https://cdn.soccerwiki.org/images/player/3513.jpg"
+},
+{
+"name": "DE BRUYNE, Kevin",
+"age": 25,
+"position": "MID",
+"team": "Manchester City",
+"nation": "Belgium",
+"rating": 93,
+"urlImage": "https://cdn.soccerwiki.org/images/player/41105.jpg"
+},
+{
+"name": "SILVA, David",
+"age": 30,
+"position": "MID",
+"team": "Manchester City",
+"nation": "Spain",
+"rating": 94,
+"urlImage": "https://cdn.soccerwiki.org/images/player/2985.jpg"
+},
+{
+"name": "DE GEA, David",
+"age": 26,
+"position": "GK",
+"team": "Manchester United",
+"nation": "Spain",
+"rating": 94,
+"urlImage": "https://cdn.soccerwiki.org/images/player/41819.jpg"
+},
+{
+"name": "SHAW, Luke",
+"age": 21,
+"position": "DEF",
+"team": "Manchester United",
+"nation": "England",
+"rating": 88,
+"urlImage": "https://cdn.soccerwiki.org/images/player/56409.jpg"
+},
+{
+"name": "SCHWEINSTEIGER, Bastian",
+"age": 32,
+"position": "MID",
+"team": "Manchester United",
+"nation": "Germany",
+"rating": 92,
+"urlImage": "https://cdn.soccerwiki.org/images/player/4562.jpg"
+},
+{
+"name": "MATA, Juan",
+"age": 28,
+"position": "MID",
+"team": "Manchester United",
+"nation": "Spain",
+"rating": 93,
+"urlImage": "https://cdn.soccerwiki.org/images/player/14228.jpg"
+},
+{
+"name": "MARTIAL, Anthony",
+"age": 20,
+"position": "FW",
+"team": "Manchester United",
+"nation": "France",
+"rating": 90,
+"urlImage": "https://cdn.soccerwiki.org/images/player/64132.jpg"
+},
+{
+"name": "VORM, Michel",
+"age": 33,
+"position": "GK",
+"team": "Tottenham Hotspur",
+"nation": "Netherland",
+"rating": 88,
+"urlImage": "https://cdn.soccerwiki.org/images/player/5698.jpg"
+},
+{
+"name": "ALDERWEIRELD, Toby",
+"age": 27,
+"position": "DEF",
+"team": "Tottenham Hotspur",
+"nation": "Belgium",
+"rating": 91,
+"urlImage": "https://cdn.soccerwiki.org/images/player/22410.jpg"
+},
+{
+"name": "ALLI, Dele",
+"age": 20,
+"position": "MID",
+"team": "Tottenham Hotspur",
+"nation": "England",
+"rating": 89,
+"urlImage": "https://cdn.soccerwiki.org/images/player/68459.jpg"
+},
+{
+"name": "KANE, Harry",
+"age": 23,
+"position": "FW",
+"team": "Tottenham Hotspur",
+"nation": "England",
+"rating": 91,
+"urlImage": "https://cdn.soccerwiki.org/images/player/49590.jpg"
+},
+{
+"name": "LAMELA, Erik",
+"age": 24,
+"position": "MID",
+"team": "Tottenham Hotspur",
+"nation": "Argentina",
+"rating": 91,
+"urlImage": "https://cdn.soccerwiki.org/images/player/39748.jpg"
+},
+{
+"name": "FORSTER, Fraser",
+"age": 28,
+"position": "GK",
+"team": "Southampton",
+"nation": "England",
+"rating": 89,
+"urlImage": "https://cdn.soccerwiki.org/images/player/36116.jpg"
+},
+{
+"name": "BERTRAND, Ryan",
+"age": 27,
+"position": "DEF",
+"team": "Southampton",
+"nation": "England",
+"rating": 89,
+"urlImage": "https://cdn.soccerwiki.org/images/player/18383.jpg"
+},
+{
+"name": "AUSTIN, Charlie",
+"age": 27,
+"position": "FW",
+"team": "Southampton",
+"nation": "England",
+"rating": 87,
+"urlImage": "https://cdn.soccerwiki.org/images/player/42810.jpg"
+},
+{
+"name": "WARD-PROWSE, James",
+"age": 22,
+"position": "MID",
+"team": "Southampton",
+"nation": "England",
+"rating": 87,
+"urlImage": "https://cdn.soccerwiki.org/images/player/53464.jpg"
+},
+{
+"name": "ROMEU, Oriol",
+"age": 25,
+"position": "MID",
+"team": "Southampton",
+"nation": "Spain",
+"rating": 86,
+"urlImage": "https://cdn.soccerwiki.org/images/player/45024.jpg"
+},
+{
+"name": "VAN DIJK, Virgil",
+"age": 25,
+"position": "DEF",
+"team": "Southampton",
+"nation": "Netherland",
+"rating": 89,
+"urlImage": "https://cdn.soccerwiki.org/images/player/53468.jpg"
+}
