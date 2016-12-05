@@ -9,15 +9,12 @@ module.exports = function(app, data) {
     let router = new express.Router();
 
     router
-        .get("/", function(req, res) {
-            res.render("playersDB");
-        })
+        .get("/", controller.getAll)
         .get("/create", function(req, res) {
             res.render("footballPlayer-create");
         })
         .get("/:name", controller.getByName)
-        .post("/create", controller.create)
-        .get("/list", controller.getAll);
+        .post("/create", controller.create);
 
     app.use("/footballPlayers", router);
 };
